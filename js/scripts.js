@@ -9,6 +9,10 @@ function inputNumber(number){
     let answer = i.toString();
     if (i.toString().includes('1')) {
       answer = "Beep!";
+    } else if (i.toString().includes("2")) {
+      answer = "Boop!";
+    } else if (i.toString().includes("3")) {
+      answer = "Won't you be my neighbor?";
     }
     result.push(answer);
   } 

@@ -18,3 +18,9 @@ function inputNumber(number){
   } 
   return result;
 }
+$(document).ready(function() {
+  $("submit").click(function() {
+    const response = $("#inputAge").val();
+    const results = inputNumber(response);
+  })
+})

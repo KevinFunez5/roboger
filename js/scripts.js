@@ -18,17 +18,17 @@ function inputNumber(number){
   } 
   return result;
 }
-$(document).ready(function() {
-  $("submit").click(function() {
-    const response = $("#inputAge").val();
-    const results = inputNumber(response);
-    $("#answer").html("");
-      if (results === 0) {
-        $("#answer").html("No numbers entered! Please enter a number to see if you qualify!");
-        return;
-      };
-      for (i = 0; i < results.length; i++){
-        $("#answer").append("<div>" + result[i] + "</div>")
-      };
-  });
+$( document ).ready(function() {
+  $('#process').click(function(){
+    const numberFromTxt = $('#inputAge').val();
+    const results = inputNumber(numberFromTxt);
+    $('#numbers').html('');
+    if (results.length === 0){
+      $('#numbers').html('No Numbers to Display');
+      return;
+    }
+    for(let i=0; i < results.length; i++){
+      $('#numbers').append('<div>' + results[i] + '</div>');
+    }
+  })
 });

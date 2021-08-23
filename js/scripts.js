@@ -26,9 +26,9 @@ $(document).ready(function() {
       if (results === 0) {
         $("#answer").html("No numbers entered! Please enter a number to see if you qualify!");
         return;
-      }
-      for (i = 0; i < results.length; i++)
+      };
+      for (i = 0; i < results.length; i++){
         $("#answer").append("<div>" + result[i] + "</div>")
-    
-  })
-})
+      };
+  });
+});

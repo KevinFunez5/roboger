@@ -7,17 +7,18 @@ function inputNumber(number){
   number = parseInt(number);
   for(let i = 0; i <= number; i++){
     let answer = i.toString();
-    if (i.toString().includes('1')) {
-      answer = "Beep!";
+    if (i.toString().includes("3")) {
+      answer = "Won't you be my neighbor?";
     } else if (i.toString().includes("2")) {
       answer = "Boop!";
-    } else if (i.toString().includes("3")) {
-      answer = "Won't you be my neighbor?";
+    } else if (i.toString().includes("1")) {
+      answer = "Beep!";
     }
     result.push(answer);
   } 
   return result;
 }
+
 $( document ).ready(function() {
   $('#process').click(function(){
     const numberFromTxt = $('#inputAge').val();

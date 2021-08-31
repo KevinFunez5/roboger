@@ -18,6 +18,12 @@ Code:
       processNumber(2);
 Expected Output: "Boop!"
 
+Describe 
+(1) create a list of numbers from 0 to the inputted number
+(2) replace numbers with 3 with "Won't you be my neighbor"
+(3) replace numbers with 2 with "Boop"
+(4) replace numbers with a 1 with "Beep"
+(5) maintain a hierarchy within the exception rules (3s trump 2s which trump 1s).
 
 
 
